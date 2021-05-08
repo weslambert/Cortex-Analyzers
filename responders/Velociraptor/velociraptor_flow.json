@@ -1,10 +1,10 @@
 {
-  "name": "Velociraptor",
+  "name": "Velociraptor_",
   "version": "0.2",
-  "author": "Wes Lambert",
+  "author": "Wes Lambert, @therealwlambert",
   "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
   "license": "AGPL-V3",
-  "description": "Run Velociraptor artifact collection",
+  "description": "Run Velociraptor flow",
   "dataTypeList": ["thehive:case_artifact"],
   "command": "Velociraptor/velociraptor_flow.py",
   "baseConfig": "Velociraptor",
@@ -22,9 +22,16 @@
       "description": "Artifact to collect",
       "type": "string",
       "multi": false,
-      "required": true,
+      "required": false,
       "defaultValue": ""
+    },
+    {
+      "name": "query_max_duration",
+      "description": "Max query duration (in seconds)",
+      "type": "number",
+      "multi": false,
+      "required": false,
+      "defaultValue": "600"
     }
   ]
 }
-
