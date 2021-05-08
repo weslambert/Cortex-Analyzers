@@ -4,7 +4,7 @@
   "author": "Wes Lambert",
   "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
   "license": "AGPL-V3",
-  "description": "Run Velociraptor flow",
+  "description": "Run Velociraptor artifact collection",
   "dataTypeList": ["thehive:case_artifact"],
   "command": "Velociraptor/velociraptor_flow.py",
   "baseConfig": "Velociraptor",
